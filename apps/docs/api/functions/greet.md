@@ -4,7 +4,7 @@
 
 > **greet**(`name`): `string`
 
-Defined in: [index.ts:12](https://github.com/mreedr/MCP-Claude-Tools/blob/bbe25f42164aa4a78d1a10ad25fb20c68525e56a/packages/sdk/src/index.ts#L12)
+Defined in: [index.ts:12](https://github.com/mreedr/MCP-Claude-Tools/blob/8e9d1c33d86b11f75a9cacb048a87c3620f50d8f/packages/sdk/src/index.ts#L12)
 
 Example SDK function. Something new now
 
