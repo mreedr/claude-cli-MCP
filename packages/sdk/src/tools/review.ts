@@ -13,10 +13,11 @@ const REVIEW_PROMPT =
 
 export function printWorkingDirectory(cwd: string = process.cwd()): string {
   console.log("cwdzhelloa");
-  return execSync("pwd", {
-    encoding: "utf-8",
-    cwd,
-    maxBuffer: 10 * 1024 * 1024,
-  }).trim();
+  // return execSync("pwd", {
+  //   encoding: "utf-8",
+  //   cwd,
+  //   maxBuffer: 10 * 1024 * 1024,
+  // }).trim();
+  return "hello"
 }
 
