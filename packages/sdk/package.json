@@ -27,6 +27,7 @@
   },
   "scripts": {
     "build": "tsup",
+    "mcp": "node dist/mcp-server.js",
     "lint": "eslint src",
     "docs": "typedoc",
     "docs:watch": "chokidar \"src/**/*\" -c \"pnpm docs\""
