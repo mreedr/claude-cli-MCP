@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+cache/
+*.tsbuildinfo
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.log
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Turbo
+.turbo/
+
+# Changeset (keep config and changelog)
+.changeset/*.md
+!.changeset/README.md

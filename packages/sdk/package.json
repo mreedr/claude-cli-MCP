@@ -1,0 +1,34 @@
+{
+  "name": "@repo/sdk",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint src",
+    "docs": "typedoc",
+    "docs:watch": "chokidar \"src/**/*\" -c \"pnpm docs\""
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/tsconfig": "workspace:*",
+    "chokidar-cli": "^3.0.0",
+    "tsup": "^8.3.5",
+    "typedoc": "^0.28.0",
+    "typedoc-plugin-markdown": "^4.4.0",
+    "typedoc-vitepress-theme": "^1.1.2",
+    "typescript": "^5.6.3"
+  }
+}

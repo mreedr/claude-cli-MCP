@@ -1,0 +1,17 @@
+[
+  {
+    "text": "Variables",
+    "collapsed": true,
+    "items": [
+      { "text": "SDK_VERSION", "link": "/api/variables/SDK_VERSION.md" }
+    ]
+  },
+  {
+    "text": "Functions",
+    "collapsed": true,
+    "items": [
+      { "text": "add", "link": "/api/functions/add.md" },
+      { "text": "greet", "link": "/api/functions/greet.md" }
+    ]
+  }
+]
