@@ -4,7 +4,7 @@
 
 > **printWorkingDirectory**(`cwd?`): `string`
 
-Defined in: [tools/review.ts:14](https://github.com/mreedr/MCP-Claude-Tools/blob/80539fe393b5d36e08f7a9caca464284c6a19418/packages/sdk/src/tools/review.ts#L14)
+Defined in: [tools/review.ts:14](https://github.com/mreedr/MCP-Claude-Tools/blob/39fecc8407fd65d8ffb1fe53e56ff3bc2b2ee1a6/packages/sdk/src/tools/review.ts#L14)
 
 Runs the Claude CLI to review the current git diff (staged + unstaged) in the project.
 Requires the Claude CLI to be installed and available on PATH.

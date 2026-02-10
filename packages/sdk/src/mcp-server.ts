@@ -8,7 +8,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
-import { SDK_VERSION, add, greet } from "./index.js";
+import { SDK_VERSION } from "./index.js";
 import { printWorkingDirectory } from "./tools/review.js";
 
 const server = new McpServer(
