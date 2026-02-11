@@ -51,6 +51,9 @@ export function reviewDiffsBeforeCommit(cwd: string = process.cwd()): string {
     return "No changes to review.";
   }
 
+  // print out full claude command
+  console.error(`claude -p ${REVIEW_BEFORE_COMMIT_PROMPT} ${diff}`);
+
   const result = spawnSync("claude", ["-p", REVIEW_BEFORE_COMMIT_PROMPT], {
     input: diff,
     cwd,
