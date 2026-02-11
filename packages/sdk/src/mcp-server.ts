@@ -19,21 +19,22 @@ const server = new McpServer(
     name: "@repo/sdk",
     version: SDK_VERSION,
   },
-  {},
+  {}
 );
-
 
 server.registerTool(
   "printWorkingDirectory",
   {
     description: "Return current working directory.",
     inputSchema: {
-      directory: z.string().describe("Directory to print working directory of.")
-    }
+      directory: z
+        .string()
+        .describe("Directory to print working directory of."),
+    },
   },
   async ({ directory }) => ({
     content: [{ type: "text", text: printWorkingDirectory(directory) }],
-  }),
+  })
 );
 
 server.registerTool(
@@ -52,7 +53,7 @@ server.registerTool(
     const cwd = directory ?? process.cwd();
     const text = reviewDiffsBeforeCommit(cwd);
     return { content: [{ type: "text" as const, text }] };
-  },
+  }
 );
 
 async function main(): Promise<void> {

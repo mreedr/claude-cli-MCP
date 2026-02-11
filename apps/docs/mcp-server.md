@@ -6,11 +6,11 @@ The SDK can be run as an [MCP (Model Context Protocol)](https://modelcontextprot
 
 When run as an MCP server, the SDK exposes these tools:
 
-| Tool | Description |
-|------|-------------|
-| `greet` | Return a greeting for the given name. |
-| `add` | Add two numbers together. |
-| `get_sdk_version` | Return the current SDK version. |
+| Tool              | Description                           |
+| ----------------- | ------------------------------------- |
+| `greet`           | Return a greeting for the given name. |
+| `add`             | Add two numbers together.             |
+| `get_sdk_version` | Return the current SDK version.       |
 
 ## Running the server
 
