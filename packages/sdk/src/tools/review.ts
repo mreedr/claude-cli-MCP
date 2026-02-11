@@ -62,6 +62,7 @@ export function reviewDiffsBeforeCommit(cwd: string = process.cwd()): string {
   } else {
     console.error(`Warning: Skill file not found at ${skillPath}; reviewing without it.`);
   }
+
   const result = spawnSync("claude", args, {
     input: diff,
     cwd,
