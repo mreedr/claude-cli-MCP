@@ -38,6 +38,7 @@ export default defineConfig({
   title: "SDK Docs",
   description: "Documentation for @repo/sdk",
   base: "/",
+  appearance: "force-dark",
   themeConfig: {
     sidebar: [
       { text: "Install MCP", link: "/" },
