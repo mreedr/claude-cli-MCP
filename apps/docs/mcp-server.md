@@ -2,6 +2,51 @@
 
 The SDK can be run as an [MCP (Model Context Protocol)](https://modelcontextprotocol.io) server so that other agents (e.g. Cursor, Claude Desktop) can call SDK functions as MCP tools over stdio.
 
+## Installation (from source)
+
+To use the MCP server with Cursor by building from the repository:
+
+### 1. Download the project
+
+Clone the repository from GitHub:
+
+```bash
+git clone https://github.com/mreedr/claude-cli-MCP.git
+cd claude-cli-MCP
+```
+
+### 2. Build the project
+
+Install dependencies and build all packages:
+
+```bash
+pnpm install
+pnpm run build
+```
+
+This produces the built MCP server at `packages/sdk/dist/mcp-server.js`.
+
+### 3. Install into Cursor
+
+Add the MCP server to your Cursor config. Edit your MCP config file (`~/.cursor/mcp.json` on macOS/Linux, or `%USERPROFILE%\.cursor\mcp.json` on Windows) and add:
+
+```json
+{
+  "mcpServers": {
+    "@repo/sdk": {
+      "command": "node",
+      "args": ["/path/to/claude-cli-MCP/packages/sdk/dist/mcp-server.js"]
+    }
+  }
+}
+```
+
+Replace `/path/to/claude-cli-MCP` with the absolute path to your cloned repository (e.g. `/Users/yourname/Development/claude-cli-MCP`).
+
+Restart Cursor to load the new MCP server.
+
+---
+
 ## Tools exposed
 
 When run as an MCP server, the SDK exposes these tools:

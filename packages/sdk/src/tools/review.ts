@@ -61,7 +61,7 @@ export function reviewDiffsBeforeCommit(cwd: string = process.cwd()): string {
     "SKILL.md"
   );
 
-  // haiku model is a good compromise between speed and quality
+  // haiku model is a good compromise between speed and qualityM
   const args = ["--model", "haiku", "-p", REVIEW_BEFORE_COMMIT_PROMPT];
   if (fs.existsSync(skillPath)) {
     args.push("--append-system-prompt-file", skillPath);
